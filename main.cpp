@@ -1,7 +1,12 @@
+#include "Display.h"
 #include <iostream>
-using namespace std;
+#include <string>
 
 int main()
 {
-    cout << "test" << endl;
+    Display display;
+    display.render();
+    std::string dummy;
+    std::getline(std::cin, dummy);
+    return 0;
 }
